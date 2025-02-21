@@ -37,6 +37,19 @@ services:
       - cf-zookeeper
     networks:
       - cloud-based-de
+  jupyter:
+    image: jupyter/pyspark-notebook
+    container_name: jupyter-notebook
+    user: root
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/home/aacict/work
+    environment:
+      JUPYTER_TOKEN: "password"
+      JAVA_HOME: "/usr/lib/jvm/java-11-openjdk-amd64"
+    networks:
+      - cloud-based-de
 networks:
   cloud-based-de:
     driver: bridge
