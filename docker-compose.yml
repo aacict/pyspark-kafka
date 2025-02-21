@@ -44,7 +44,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./:/home/aacict/work
+      - ./:/home/jovyan/work
     environment:
       JUPYTER_TOKEN: "password"
       JAVA_HOME: "/usr/lib/jvm/java-11-openjdk-amd64"
