@@ -1,5 +1,3 @@
-#### Implementation of kafka with pyspark
-
 # PySpark Kafka Integration
 Note: We don't need zookeeper from the introduction of kafka kRaft.
 
